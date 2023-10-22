@@ -41,6 +41,12 @@ window.onload = function () {
     document.documentElement.style.setProperty("--text-color", "#2A2B2E");
     document.documentElement.style.setProperty("--background-color", "#F5F5F5");
   }
+  if (localStorage.getItem("savedColor") == null) {
+    document.documentElement.style.setProperty(
+      "--main-color",
+      "rgba(79, 155, 115, 1)"
+    );
+  }
 };
 mode_changer.addEventListener("click", function () {
   this.toggleAttribute("checked");
