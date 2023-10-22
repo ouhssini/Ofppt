@@ -58,8 +58,7 @@ body {
 }
 .container {
   width: 80%;
-  margin-left: auto;
-  margin-right: auto;
+ margin: auto;
 }
 .section-title {
   margin: auto;
@@ -76,6 +75,7 @@ body {
   -moz-transition: 0.75s ;
   -ms-transition: 0.75s ;
   -o-transition: 0.75s ;
+  text-align: center;
 }
 .section-title::after,
 .section-title::before {
@@ -365,7 +365,7 @@ setting of website colors and modes : dark and light
   right: 15px;
   bottom: 50px;
   cursor: pointer;
-  border: 1px solid var(--main-color);
+  border: 1px solid var(--text-color);
   padding: 10px;
   height: 30px;
   width: 30px;
@@ -381,9 +381,10 @@ setting of website colors and modes : dark and light
   -o-transition: var(--transition-dur);
   box-shadow: var(--shadow);
   z-index: 1000;
+  background-color: var(--active-color);
 }
 #go-top i {
-  color: inherit;
+  color:inherit;
 }
 .settings {
   display: flex;
@@ -590,7 +591,7 @@ setting of website colors and modes : dark and light
 .video-title {
   padding: 10px 0 0 20px;
   text-transform: capitalize;
-  color: color-mix(in srgb, var(--main-color) 70%, transparent);
+  color: color-mix(in srgb, var(--main-color) 90%, transparent);
   font-size: 16px;
 }
 .video span {
@@ -666,10 +667,65 @@ min-height: 100vh;
   font-style: italic;
 }
 /* latest Articles ends here */
+
+/* news-letter section starts here  */
+.news-letter {
+  height: fit-content;
+  padding: 30px;
+}
+.news-letter form {
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.news-letter input[type="email"] {
+  width: 40%;
+  padding: 8px 20px;
+  /* flex-shrink: 1; */
+  flex-basis: 350px;
+}
+.news-letter form button {
+  padding: 6px 10px;
+  text-transform: uppercase;
+  background-color: var(--main-color);
+  outline: none;
+  font-weight: 600;
+  border: 1px solid var(--text-color);
+  cursor: pointer;
+  transition: var(--transition-dur);
+  -webkit-transition: var(--transition-dur);
+  -moz-transition: var(--transition-dur);
+  -ms-transition: var(--transition-dur);
+  -o-transition: var(--transition-dur);
+}
+.news-letter form button:hover {
+  border: 1px solid var(--text-color);
+  transform: scale(1.02);
+  -webkit-transform: scale(1.02);
+  -moz-transform: scale(1.02);
+  -ms-transform: scale(1.02);
+  -o-transform: scale(1.02);
+}
+/* news-letter section ends here  */
+
+/* footer section starts here  */
+footer {
+  min-height: 50vh;
+  background-color: var(--main-color);
+  /* margin-top: 30px; */
+  padding: 30px;
+}
+
+
+
+/* footer section ends here  */
+
 /*
 !Media Queries 
 ?for Mobiles and tablets
-todo: set up the media queries
 */
 /* Styles for screens smaller than 768px */
 @media (max-width: 767px) {
