@@ -36,6 +36,11 @@ body {
   overflow-x: hidden;
   background-color: var(--background-color);
 }
+.mx-auto {
+  display: block !important; 
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
 *::selection {
   /* color: black; */
   background-color: #8ed5e4;
@@ -609,6 +614,7 @@ setting of website colors and modes : dark and light
 display: grid;
 grid-template-columns: 30% 70%;
 gap: 20px;
+align-items: start;
 min-height: 100vh;
 }
 .aside{
@@ -762,6 +768,99 @@ footer {
 
 /* footer section ends here  */
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* *Dashboard css starts here */
+
+.dashboard {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 10px;
+}
+.dashboard .left-nav {
+  position: relative;
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.162);
+}
+.expand {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+  font-size: 20px;
+} 
+.dashboard .left-nav .left-menu {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px; 
+}
+.dashboard .left-nav .left-menu li {
+  padding: 10px 25px;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  transition: var(--transition-dur);
+  -webkit-transition: var(--transition-dur);
+  -moz-transition: var(--transition-dur);
+  -ms-transition: var(--transition-dur);
+  -o-transition: var(--transition-dur);
+}
+.dashboard .left-nav .left-menu li:is(.active ,:hover){
+  background-color: var(--active-color);
+}
+.dashboard .left-menu li span {
+  margin-left: 20px;
+}
+.dashboard .left-menu li span.hidden {
+  display: none;
+}
+.dashboard .dashboard-content {
+  padding: 15px;
+  box-shadow: 0px -6px 10px rgba(0, 0, 0, 0.162);
+}
+section.home {
+  background-color: red;
+  min-height: 100%;
+  width: 100%;
+}
+
+/* *Dashboard css ends here */
 /*
 !Media Queries 
 ?for Mobiles and tablets
@@ -842,3 +941,8 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+
+
+
+
+
