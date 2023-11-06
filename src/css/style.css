@@ -639,7 +639,7 @@ setting of website colors and modes : dark and light
   display: inline-block;
   flex: 1 1 fit-content;
 }
-.aside a {
+.aside .categories  a {
   border: 1px solid var(--main-color);
   text-transform: capitalize;
   padding: 5px 10px;
@@ -649,7 +649,7 @@ setting of website colors and modes : dark and light
   -ms-transition: var(--transition-dur);
   -o-transition: var(--transition-dur);
 }
-.aside a:hover {
+.aside .categories  a:hover {
   color: var(--main-color);
 }
 
@@ -720,9 +720,9 @@ aside h5 {
 .follow_page_btn {
   color: white !important;
   background-color: gray;
-  border: none !important;
+  padding: 5px 8px;
   border-radius: 3px;
-  font-size: 10px;
+  font-size: 12px;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   -ms-border-radius: 3px;
@@ -730,6 +730,53 @@ aside h5 {
 }
 .follow_page_btn i {
   color: white;
+}
+.top_files {
+  padding: 0 10px;
+  margin-bottom: 20px;
+}
+.file_card {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 5%;
+  flex-wrap: wrap;
+  padding:  10px ;
+  background-color: var(--background-color);
+  box-shadow: var(--shadow);
+  margin-top: 10px;
+  cursor: pointer;
+}
+.file_img {
+
+  flex: 1 20%;
+}
+.file_img img {
+  max-width: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.file_content {
+  flex:1 70%;
+}
+
+.file_content .file_name{
+  font-size: 15px;
+  text-transform: capitalize;
+  color: var(--text-color);
+ 
+}
+.file_content .file_desc {
+font-size: 12px;
+line-height: 1.5;
+}
+.file_content .file_info span {
+  font-size: 10px;
+}
+.file_content .file_info i {
+  color: var(--main-color);
+  margin-right: 5px;
+  font-size: 14px;
 }
 .title {
   margin-bottom: 30px;
