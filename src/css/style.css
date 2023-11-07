@@ -937,7 +937,7 @@ aside h5 {
 
 /* footer section starts here  */
 footer {
-  min-height: 50vh;
+  min-height: 20vh;
   background-color: var(--main-color);
   /* margin-top: 30px; */
   padding: 30px;
@@ -960,8 +960,7 @@ footer {
   position: absolute;
   bottom: 0%;
   width: 100%;
-  margin-top: 20px;
-  padding-bottom: 20px;
+  padding: 20px 0px;
   text-align: center;
   line-height: 2;
   color: var(--text-color);

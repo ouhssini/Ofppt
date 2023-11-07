@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./src/css/all.min.css" />
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/> -->
     <!-- linking css file  -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="./src/css/style.css" />
     <link rel="stylesheet" href="./src/css/animation.css" />
     <title>OFPPT Archive || digital development</title>
@@ -98,7 +99,7 @@
     </header>
     <!-- ! header section ends here -->
     <!-- hero section starts here -->
-    <div class="hero container">
+    <div data-aos="zoom-in-down" class="hero container">
       <div class="text-holder">
         <h1 class="hero-title">Welcome to Ofppt Archive</h1>
         <p class="hero-text">
@@ -115,10 +116,10 @@
     </div>
     <!--! hero section ends here  -->
     <!-- top watched section starts here  -->
-    <section class="top-watched container" id="start">
-      <h1 class="section-title">Top watched videos</h1>
+    <section class=" top-watched container" id="start">
+      <h1 data-aos="zoom-out" class="section-title">Top watched videos</h1>
       <div class="video-holder">
-        <div class="video">
+        <div data-aos="fade-right" data-aos-duration="900" class="video">
           <div class="video-thumbnail">
             <div class="video-overlay">
               <i class="fa fa-play-circle"></i>
@@ -133,7 +134,7 @@
           <span class="duration">duration: 20min</span>
           <span class="views"><i class="fa fa-eye"></i> 200k views</span>
         </div>
-        <div class="video">
+        <div data-aos="fade-right" data-aos-duration="1000" class="video">
           <div class="video-thumbnail">
             <div class="video-overlay">
               <i class="fa fa-play-circle"></i>
@@ -148,7 +149,7 @@
           <span class="duration">duration: 15min</span>
           <span class="views"><i class="fa fa-eye"></i> 150k views</span>
         </div>
-        <div class="video">
+        <div data-aos="fade-right" data-aos-duration="1100" class="video">
           <div class="video-thumbnail">
             <div class="video-overlay">
               <i class="fa fa-play-circle"></i>
@@ -163,7 +164,7 @@
           <span class="duration">duration: 1h:25min</span>
           <span class="views"><i class="fa fa-eye"></i> 120k views</span>
         </div>
-        <div class="video">
+        <div data-aos="fade-left" data-aos-duration="900" class="video">
           <div class="video-thumbnail">
             <div class="video-overlay">
               <i class="fa fa-play-circle"></i>
@@ -178,7 +179,7 @@
           <span class="duration">duration: 5min</span>
           <span class="views"><i class="fa fa-eye"></i> 102k views</span>
         </div>
-        <div class="video">
+        <div data-aos="fade-left" data-aos-duration="1000" class="video">
           <div class="video-thumbnail">
             <div class="video-overlay">
               <i class="fa fa-play-circle"></i>
@@ -193,7 +194,7 @@
           <span class="duration">duration: 9min</span>
           <span class="views"><i class="fa fa-eye"></i> 100K views</span>
         </div>
-        <div class="video">
+        <div data-aos="fade-left" data-aos-duration="1100" class="video">
           <div class="video-thumbnail">
             <div class="video-overlay">
               <i class="fa fa-play-circle"></i>
@@ -209,14 +210,14 @@
           <span class="views"><i class="fa fa-eye"></i> 80k views</span>
         </div>
       </div>
-      <a href="videos.html" class="btn">More videos</a>
+      <a data-aos="zoom-out" href="videos.html" class="btn">More videos</a>
     </section>
     <!--! top watched section  ends here -->
 
     <!-- latest Articles section -->
-    <h1 class="section-title title">Latest Articles</h1>
+    <h1 data-aos="zoom-out" class="section-title title">Latest Articles</h1>
     <section class="articles container">
-      <aside class="aside">
+      <aside data-aos="fade-down-right" class="aside">
         <div class="categories">
           <h5>categories</h5>
           <ul>
@@ -274,7 +275,7 @@
             </div>
       </aside>
       <section class="latest-articles">
-        <div class="article-card">
+        <div data-aos="fade-up-left" class="article-card">
           <div class="image-container">
             <img src="./src/img/algozero.jpg" alt="post image" />
             <div class="post_overlay"> <i class="fa fa-file"></i></div>
@@ -292,7 +293,7 @@
             <span class="post-date">12-02-2023</span>
           </div>  
         </div>
-        <div class="article-card">
+        <div data-aos="fade-up-left" class="article-card">
           <div class="image-container">
             <img src="./src/img/post_img.jpg" alt="post image" />
             <div class="post_overlay"> <i class="fa fa-file"></i></div>
@@ -310,7 +311,7 @@
             <span class="post-date">12-02-2023</span>
           </div>  
         </div>
-        <div class="article-card">
+        <div data-aos="fade-up-left" class="article-card">
           <div class="image-container">
             <img src="./src/img/post_img.jpg" alt="post image" />
             <div class="post_overlay"> <i class="fa fa-file"></i></div>
@@ -328,7 +329,7 @@
             <span class="post-date">12-02-2023</span>
           </div>  
         </div>
-        <div class="article-card">
+        <div data-aos="fade-up-left" class="article-card">
           <div class="image-container">
             <img src="./src/img/post_img.jpg" alt="post image" />
             <div class="post_overlay"> <i class="fa fa-file"></i></div>
@@ -369,5 +370,9 @@
       </div>
     </footer>
     <script src="./src/js/script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
