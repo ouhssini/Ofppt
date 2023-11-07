@@ -30,10 +30,11 @@
 html {
   line-height: 1.15;
   scroll-behavior: smooth;
+  overflow-x: hidden !important;
 }
 body {
   min-height: 100vh;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
   background-color: var(--background-color);
 }
 .mx-auto {
