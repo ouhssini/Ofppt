@@ -6,7 +6,8 @@ var mode_changer = document.getElementById("mode-change");
 var menu_icon = document.getElementById("menu-icon");
 var __menu = document.getElementById("navbar");
 let go_to_top = document.getElementById("go-top");
-
+var toggle_password = document.getElementById("togglePassword");
+var password_input = document.getElementById("password");
 /* 
 this code is used to show or hide the menu 
 */
@@ -100,4 +101,21 @@ window.onscroll = function () {
 go_to_top.addEventListener("click", function () {
   window.scrollTo(0, 0);
 });
+// ! login page code
+toggle_password.addEventListener("click", function () {
+  if (password_input.type == "password") {
+    password_input.type = "text";
+    this.classList.remove("fa-eye");
+    this.classList.add("fa-eye-slash");
+  } else {
+    password_input.type = "password";
+    this.classList.add("fa-eye");
+    this.classList.remove("fa-eye-slash");
+  }
+});
+
+
+
+
+
 // **dashboard code 
