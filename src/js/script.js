@@ -19,7 +19,7 @@ menu_icon.addEventListener("click", function () {
     this.classList.add("fa-bars");
     this.style.color = "black";
   } else {
-    this.style.left = "80%";
+    this.style.left = "83%";
     this.classList.remove("fa-bars");
     this.classList.add("fa-x");
     this.style.color = "tomato";

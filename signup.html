@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./src/img/fav-icon.ico" type="image/x-icon" />
+    <!-- linking font awesome -->
+    <link rel="stylesheet" href="./src/css/all.min.css" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/> -->
+    <!-- linking css file  -->
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <link rel="stylesheet" href="./src/css/animation.css" />
+    <title>OFPPT Archive || digital development</title>
+    <meta name="description" content="Discover the resources you need to succeed in digital development.">
+</head>
+
+<body>
+    <div id="go-top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </div>
+    <!-- gear icon -->
+    <i class="fa-solid fa-gears settings-icon" id="settings-icon"></i>
+    <!-- settings -->
+    <div class="settings" id="settings">
+        <h4>website settings</h4>
+        dark mode
+        <input class="switch" type="checkbox" id="mode-change" checked />
+        <ul class="colors">
+            <li class="color" style="background-color: rgba(255, 99, 71, 1)"></li>
+            <li class="color" style="background-color: rgba(255, 128, 128,1)"></li>
+            <li class="color" style="background-color: rgba(255, 176, 0,1)"></li>
+            <li class="color" style="background-color: rgba(186,9,19,1)"></li>
+            <li class="color" style="background-color: rgba(79, 155, 115, 1)"></li>
+            <li class="color" style="background-color: rgba(56, 118, 191,1)"></li>
+        </ul>
+    </div>
+    <i id="menu-icon"></i>
+    <!-- settings -->
+
+    <main class="login">
+        <img src="./src/img/Secure login-bro.svg">
+        <div class="login_form">
+            <h1>join the community</h1>
+            <form action="">
+                <div class="input-field">
+                    <i class="fas fa-user email"></i>
+                    <input type="text" name="name" placeholder="Full Name" required>
+                </div>
+                <div class="input-field">
+                    <i class="fas fa-envelope email"></i>
+                    <input type="email" name="signup_email" placeholder="Email" required>
+                </div>
+                <div class="input-field">
+                    <i class="fas fa-lock password"></i>
+                    <input type="password" name="signup_password" placeholder="Password" id="password" required>
+                    <i class="fas fa-eye toggle_password" id="togglePassword"></i>
+                </div>
+                <div class="input-field">
+                    <i class="fas fa-lock password"></i>
+                    <input type="password" name="re_signup_password" placeholder="re-type Password" id="password"
+                        required>
+                </div>
+                <div class="input-field">
+                    <i class="fas fa-mobile email"></i>
+                    <input type="tel" name="phone" placeholder="Full Name" required>
+                </div>
+                <div class="input-field">
+                    <input type="checkbox" name="remember" id="remember">
+                    <label for="remember"> accept <a href="" style="color: var(--main-color);">terms of use</a></label>
+                </div>
+                <input type="submit" value="Sign up">
+                <div class="input-field">
+                    <span class="signup_hint">you alerady have an account ? <a href="login.html">login</a></span>
+                </div>
+                <a href="./index.html"> <i class="fa fa-arrow-alt-circle-right"></i>Go back to Home</a>
+            </form>
+        </div>
+    </main>
+    <script src="./src/js/script.js"></script>
+</body>
+
+</html>
