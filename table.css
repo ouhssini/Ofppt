@@ -1,0 +1,49 @@
+header{
+    margin: 20PX;
+    height: 100PX;
+    background-image: url(img/téléchargement.png);
+}
+h1{
+    padding: 30PX;
+    text-align: center;
+    font-family: 'Montserrat Alternates', sans-serif;
+    color:rgba(79, 155, 115, 1) ;
+}
+    
+ table{
+
+    border-collapse: collapse;
+    border: 1px solid black;
+    margin-top: 70PX;
+    margin-left: 200PX;
+}
+td{
+    padding:  15PX 20PX ;
+    text-align: center;
+    font-family: 'Montserrat Alternates', sans-serif;
+
+}
+.gris{
+    background-color:#fafafa
+}
+#t1{
+   
+    background-color:rgba(79, 155, 115, 1);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+img{
+    height: 50PX;
+    width: 50PX;
+    border-radius: 50PX;
+    margin: 5PX;
+    
+}
+@media only screen and (max-width: 600px) {
+    th, td {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+    }
