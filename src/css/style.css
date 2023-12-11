@@ -1362,39 +1362,6 @@ margin-top: 15px;
 /* * SINGLE VIDEO PAGE ENDS HERE */
 
 
-
-
-/* ! users tabel page starts here */
-.controller {
-  background-color: #299be4;
-  display: flex;
-  width: 50%;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 10px;
-}
-
-.controller button {
- 
-    padding: 7px 10px;
-    text-transform: capitalize;
-    cursor: pointer;
-    background-color: var(--main-color);
-    font-size: 15px;
-    border: 1px solid black;
-    outline: none;
-    color: var(--text-color);
-    transition: 0.5s;
-  }
-  .controller button i {
-    margin-right: 5px;
-  }
-  .controller button:hover {
-    background-color: color-mix(in srgb, var(--main-color) 79%, black 10%);
-  }
-
-/* ! users tabel page ends here */
-
 /* *Dashboard css starts here */
 
 .dashboard {

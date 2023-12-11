@@ -1,53 +1,213 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <title>Contact</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="./src/img/fav-icon.ico" type="image/x-icon" />
+  <!-- linking font awesome -->
+  <link rel="stylesheet" href="./src/css/all.min.css" />
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/> -->
+  <!-- linking css file  -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="./src/css/style.css" />
+  <link rel="stylesheet" href="./src/css/animation.css" />
+  <link rel="stylesheet" href="src/css/contact.css">
+  <title>OFPPT Archive || digital development</title>
+  <meta name="description" content="Discover the resources you need to succeed in digital development.">
 </head>
-<body class="mais11">
-  <div class="container11">
-    <div class="item11">
+<body>
+  <div id="go-top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </div>
+  <!-- gear icon -->
+  <i class="fa-solid fa-gears settings-icon" id="settings-icon"></i>
+  <!-- settings -->
+  <div class="settings" id="settings">
+    <h4>website settings</h4>
+    dark mode
+    <input class="switch" type="checkbox" id="mode-change" checked />
+    <ul class="colors">
+      <li class="color" style="background-color: rgba(255, 99, 71, 1)"></li>
+      <li class="color" style="background-color: rgba(255, 128, 128,1)"></li>
+      <li class="color" style="background-color: rgba(255, 176, 0,1)"></li>
+      <li class="color" style="background-color: rgba(186,9,19,1)"></li>
+      <li class="color" style="background-color: rgba(79, 155, 115, 1)"></li>
+      <li class="color" style="background-color: rgba(56, 118, 191,1)"></li>
+    </ul>
+  </div>
+  <!-- settings -->
+
+  <!-- header section starts here -->
+  <i class="menu-icon fa fa-bars" id="menu-icon"></i>
+  <header class="container">
+    <a href="/">
+      <img src="./src/img/devlogo.png" alt="Ofppt logo" class="logo" /></a>
+    <nav class="navbar" id="navbar">
+      <ul class="main-menu">
+        <li>
+          <a href="index.html"><i class="fa fa-home"></i>Home</a>
+        </li>
+        <li>
+          <a href="about.html"><i class="fa fa-question-circle"></i>about</a>
+        </li>
+        <li>
+          <a href="Team.html"><i class="fa fa-users"></i>our team</a>
+        </li>
+        <li class="active">
+          <a href="contact.html"><i class="fa fa-headset"></i>Contact</a>
+        </li>
+        <li>
+          <a href=""><i class="fa fa-list"></i>Courses</a>
+          <div class="sub-menu">
+            <img src="./src/img/Dropdown menu-bro.svg" alt="mega menu image" class="image pulse" />
+            <div class="links">
+              <ul>
+                <li>
+                  <a href="videos.html"><i class="fa fa-video"></i>Videos</a>
+                </li>
+                <li>
+                  <a href="document.html"><i class="fa fa-file"></i>Documents</a>
+                </li>
+                <li>
+                  <a href="site.html"><i class="fa fa-globe"></i>Websites</a>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <a href="./App.html"><i class="fa fa-computer"></i>Applications</a>
+                </li>
+                <li>
+                  <a href=""><i class="fa fa-gamepad"></i>Games</a>
+                </li>
+                <li>
+                  <a href=""><i class="fa fa-folder"></i>Articles</a>
+                </li>
+                <li>
+                  <a href="table.html"><i class="fa fa-users"></i>Users</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <!-- ! header section ends here -->
+  <h1 class="section-title contact_us_page">Contact us</h1>
+  <div class="mais11">
+    <div class="container11">
+      <div class="item11">
         <div class="submit-form11">
-            <h4 class="third-text text">Contact Us</h4>
-            <form action="" class="main11">
-                <div class="input-box11">
-                    <input type="text11" class="input11" required></input>
-                    <label for="">Name</label>
-                </div>
-                <div class="input-box11">
-                    <input type="email" class="input11" required></input>
-                    <label for="">Email</label>
-                </div>
-                <div class="input-box11">
-                    <input type="tel" class="input11" required></input>
-                    <label for="">Phone</label>
-                </div>
-                <div class="input-box11">
-                    <textarea class="input11" name="" id="message" cols="30" rows="10" required></textarea>
-                    <label for="">Message</label>
-                </div>
-                <input type="submit" class="btn11"  value="Submit">
+          <h4 class="third-text text">Contact Us</h4>
+          <form action="" class="main11">
+            <div class="input-box11">
+              <input type="text11" class="input11" required></input>
+              <label for="">Name</label>
+            </div>
+            <div class="input-box11">
+              <input type="email" class="input11" required></input>
+              <label for="">Email</label>
+            </div>
+            <div class="input-box11">
+              <input type="tel" class="input11" required></input>
+              <label for="">Phone</label>
+            </div>
+            <div class="input-box11">
+              <textarea class="input11" name="" id="message" cols="30" rows="10" required></textarea>
+              <label for="">Message</label>
+            </div>
+            <input type="submit" class="btn11" value="Submit">
             </form>
         </div>
         <div class="contact11">
-            <div class="first-text11"> Let's get in touch</div>
-            <div class="map11">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3422.629293461811!2d-6.906595725330023!3d30.924984476317565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdbb1069467751c9%3A0xc620e61542567a0e!2sISTA%20OUARZAZATE!5e0!3m2!1sfr!2sma!4v1699647000993!5m2!1sfr!2sma"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <div class="first-text11"> Let's get in touch</div>
+          <div class="map11">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3422.629293461811!2d-6.906595725330023!3d30.924984476317565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdbb1069467751c9%3A0xc620e61542567a0e!2sISTA%20OUARZAZATE!5e0!3m2!1sfr!2sma!4v1699647000993!5m2!1sfr!2sma"
+              style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
             <div class="social-links">
-                <span class="secnd-text11">Connect with us:</span>
-                <ul class="social-media11">
-                    <li><a href="#"><i class='bx bxl-facebook'></i></a></li>
-                    <li><a href="#"><i class='bx bxl-twitter'></i></a></li>
-                    <li><a href="#"><i class='bx bxl-youtube'></i></a></li>
-                    <li><a href="#"><i class='bx bxl-linkedin'></i></a></li>
+              <span class="secnd-text11">Connect with us:</span>
+              <ul class="social-media11">
+                <li><a href="#"><i class='fa-brands fa-facebook'></i></a></li>
+                <li><a href="#"><i class='fa-brands fa-twitter'></i></a></li>
+                <li><a href="#"><i class='fa-brands fa-linkedin'></i></a></li>
+                <li><a href="#"><i class='fa-brands fa-instagram'></i></a></li>
                 </ul>
+                </div>
+                </div>
+                </div>
+                </div>
+                </div>
+                <!-- footer -->
+                <footer id="footer">
+                  <div class="container cols">
+                    <div class="col">
+                      <h3>OFPPT ARCHIVE</h3>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque enim temporibus sapiente molestias at?
+                        Autem
+                        suscipit deserunt atque fugiat cum, nemo similique veniam rerum, quis sit impedit excepturi omnis
+                        corrupti!</p>
+                    </div>
+                    <div class="col">
+                      <h3>Our partner</h3>
+                      <h3>> partner 1</h3>
+                      <h3>> partner 2</h3>
+                      <h3>> partner 3</h3>
+                      <h3>> partner 4</h3>
+                    </div>
+                    <div class="col">
+                      <h3>top applications</h3>
+                      <div class="footer_items">
+                        <div class="footer_item">
+                          <img src="./src/img/icons8_pycharm.svg">
+                          <span>Pycharm</span>
+                        </div>
+                        <div class="footer_item">
+                          <img src="./src/img/icons8_sublime_text.svg">
+                          <span>Sublime</span>
+                        </div>
+                        <div class="footer_item">
+                          <img src="./src/img/icons8_mongodb.svg">
+                          <span>mongodb</span>
+                        </div>
+                        <div class="footer_item">
+                          <img src="./src/img/icons8_git.svg">
+                          <span>git</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <h3>Reach us</h3>
+                      <div class="footer_items">
+                        <div class="footer_item">
+                          <img src="./src/img/icons8_facebook.svg">
+                          <span>facebook</span>
+                        </div>
+                        <div class="footer_item">
+                          <img src="./src/img/icons8_instagram.svg">
+                          <span>instagram</span>
+                        </div>
+                        <div class="footer_item">
+                          <img src="./src/img/icons8_vimeo.svg">
+                          <span>vimeo</span>
+                        </div>
+                        <div class="footer_item">
+                          <img src="./src/img/icons8_tiktok.svg">
+                          <span>tiktok</span>
+                        </div>
             </div>
         </div>
     </div>
-  </div>  
+    <div class="container copyright">
+      Copyright &copy; 2023 Made with &heartsuit; by dev101 groupe 1 All Rights Reserved.
+    </div>
+</footer>
+<script src="./src/js/script.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </body>
 </html>

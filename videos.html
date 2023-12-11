@@ -1,142 +1,258 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./src/img/fav-icon.ico" type="image/x-icon" />
+    <!-- linking font awesome -->
+    <link rel="stylesheet" href="./src/css/all.min.css" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/> -->
+    <!-- linking css file  -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <link rel="stylesheet" href="./src/css/animation.css" />
+    <meta name="description" content="Discover the resources you need to succeed in digital development.">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="style (3).css">
-    <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.min.css">
     <style>
-         *{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-}
-.meryem95 .row22{
-    width: 80%;
-    margin: auto;
-}
-.meryem95 .row22 #main16{
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    padding: 10px;
-    margin-bottom: 50px;
-}
-.meryem95 .row22 #main16 #mery{
-    margin: 50px 20px;
-    margin-left: 10px;
-    font-size: 25px;
-    padding: 15px;
-    background: rgb(145, 214, 145);
-    color:#fff;
-    border-radius: 5px;
-}
-.meryem95 .row22 .header{
-    width: 60px;
-    margin: auto;
-}
-.content3{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-}
-.content3 .card{
-    flex: 1;
-    margin: 50px 20px;
-    box-shadow: 0px 0px 0px 0px rgba(0,0,0,1);
-    background-color: #fff;
-    box-shadow: var(--shadow);
-}
-.content3 .card img{
-    width: 100%;
-    margin-bottom: 25px;
-}
-.content3 .card #main11{
-    margin-bottom: 20px;
-    margin-left: 10px;
-    font-size: 16px;
-    color:rgb(145, 214, 145);
-}
+        .section-title {
+            margin-top: 80px;
+        }
 
-#bay .pagination{
-    margin-left: 600px;
-}
-.ayman{
-    margin-bottom: 30px;
-    padding-top:20px ;
-    font-size: 45px;
-    color:rgb(145, 214, 145) ;
-    font-weight: 600;
-    text-transform: capitalize;
-    margin-left: 450px;
-}
-@media screen and (max-width: 768px) {
-    .meryem95 .row22 #main16 #mery {
-        margin: 10px;
-    }
+        .meryem95 .row22 {
+            width: 80%;
+            margin: auto;
+        }
 
-    .content3 .card {
-        flex: 1 0 100%;
-    }
+        .meryem95 .row22 #main16 {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
 
-    .ayman {
-        margin-left: 10px;
-    }
-}
+        .meryem95 .row22 #main16 #mery {
+            margin: 50px 20px 10px;
+            font-size: 16px;
+            padding: 8px 15px;
+            background: var(--main-color);
+            color: var(--text-color);
+            border-radius: 5px;
+        }
 
-/* Media Query for screens with a maximum width of 480px */
-@media screen and (max-width: 480px) {
-    .meryem95 .row22 #main16 #mery {
-        font-size: 14px;
-    }
+        .meryem95 .row22 .header {
+            width: 60px;
+            margin: auto;
+        }
 
-    .content3 .card {
-        flex: 1 0 100%;
-        max-width: none;
-    }
+        .content3 {
+            display: flex;
+            justify-content: center;
+            align-items: stretch;
+        }
 
-    .content3 .card #main11 {
-        font-size: 12px;
-    }
+        .content3 .card {
+            flex: 1;
+            background-color: var(--background-color);
+            box-shadow: var(--shadow);
+            margin:0 15px 15px 0px;
+        }
 
-    .ayman {
-        font-size: 24px;
-        margin-left: 0;
-    }
-}
-@media screen and (max-width: 225px) {
-    .meryem95 .row22 #main16 #mery {
-        font-size: 12px; /* Adjusted for very small screens */
-    }
+        .content3 .card img {
+            width: 100%;
+            margin-bottom: 10px;
+        }
 
-    .content3 .card {
-        flex: 1 0 100%;
-        max-width: none;
-    }
+        .content3 .card #main11 {
+            margin-bottom: 20px;
+            margin-left: 10px;
+            font-size: 16px;
+            line-height: 1.8;
+            color: var(--main-color);
+        }
 
-    .content3 .card #main11 {
-        font-size: 10px; /* Adjusted for very small screens */
-    }
+        #bay .pagination {
+            margin-left: 600px;
+        }
 
-    .ayman {
-        font-size: 16px; /* Adjusted for very small screens */
-    }
-}
+        /* 
+        .ayman {
+            margin-bottom: 30px;
+            padding-top: 20px;
+            font-size: 45px;
+            color: rgba(79, 155, 115, 1);
+            font-weight: 600;
+            text-transform: capitalize;
+            margin-left: 450px;
+        } */
 
+        .btn2 {
+            padding: 10px 15px;
+            font-size: 10px;
+            background-color: var(--text-color);
+            color: var(--background-color);
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: var(--transition-dur);
+        }
 
+        .btn2 i {
+            color: inherit;
+        }
 
+        .btn2:hover {
+            background-color: var(--main-color);
+        }
+
+        #btn2 {
+            text-align: center;
+            padding: 15PX;
+        }
+
+        @media screen and (max-width: 768px) {
+            .meryem95 .row22 #main16 #mery {
+                margin: 10px;
+            }
+
+            .content3 .card {
+                flex: 1 0 100%;
+            }
+
+            .ayman {
+                margin-left: 10px;
+            }
+        }
+
+        /* Media Query for screens with a maximum width of 480px */
+        @media screen and (max-width: 480px) {
+            .meryem95 .row22 #main16 #mery {
+                font-size: 14px;
+            }
+
+            .content3 .card {
+                flex: 1 0 100%;
+                max-width: none;
+            }
+
+            .content3 .card #main11 {
+                font-size: 12px;
+            }
+
+            .ayman {
+                font-size: 24px;
+                margin-left: 0;
+            }
+        }
+
+        @media screen and (max-width: 225px) {
+            .meryem95 .row22 #main16 #mery {
+                font-size: 12px;
+                /* Adjusted for very small screens */
+            }
+
+            .content3 .card {
+                flex: 1 0 100%;
+                max-width: none;
+            }
+
+            .content3 .card #main11 {
+                font-size: 10px;
+                /* Adjusted for very small screens */
+            }
+
+            .ayman {
+                font-size: 16px;
+                /* Adjusted for very small screens */
+            }
+        }
     </style>
     <title>VEDIOS</title>
 </head>
+
 <body>
+    <div id="go-top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </div>
+    <!-- gear icon -->
+    <i class="fa-solid fa-gears settings-icon" id="settings-icon"></i>
+    <!-- settings -->
+    <div class="settings" id="settings">
+        <h4>website settings</h4>
+        dark mode
+        <input class="switch" type="checkbox" id="mode-change" checked />
+        <ul class="colors">
+            <li class="color" style="background-color: rgba(255, 99, 71, 1)"></li>
+            <li class="color" style="background-color: rgba(255, 128, 128,1)"></li>
+            <li class="color" style="background-color: rgba(255, 176, 0,1)"></li>
+            <li class="color" style="background-color: rgba(186,9,19,1)"></li>
+            <li class="color" style="background-color: rgba(79, 155, 115, 1)"></li>
+            <li class="color" style="background-color: rgba(56, 118, 191,1)"></li>
+        </ul>
+    </div>
+    <!-- settings -->
+    
+    <!-- header section starts here -->
+    <i class="menu-icon fa fa-bars" id="menu-icon"></i>
+    <header class="container">
+        <a href="/">
+            <img src="./src/img/devlogo.png" alt="Ofppt logo" class="logo" /></a>
+        <nav class="navbar" id="navbar">
+            <ul class="main-menu">
+                <li>
+                    <a href="index.html"><i class="fa fa-home"></i>Home</a>
+                </li>
+                <li>
+                    <a href="about.html"><i class="fa fa-question-circle"></i>about</a>
+                </li>
+                <li>
+                    <a href="Team.html"><i class="fa fa-users"></i>our team</a>
+                </li>
+                <li>
+                    <a href="contact.html"><i class="fa fa-headset"></i>Contact</a>
+                </li>
+                <li>
+                    <a href=""><i class="fa fa-list"></i>Courses</a>
+                    <div class="sub-menu">
+                        <img src="./src/img/Dropdown menu-bro.svg" alt="mega menu image" class="image pulse" />
+                        <div class="links">
+                            <ul>
+                                <li class="active">
+                                    <a href="videos.html"><i class="fa fa-video"></i>Videos</a>
+                                </li>
+                                <li>
+                                    <a href="document.html"><i class="fa fa-file"></i>Documents</a>
+                                </li>
+                                <li>
+                                    <a href="site.html"><i class="fa fa-globe"></i>Websites</a>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <a href="./App.html"><i class="fa fa-computer"></i>Applications</a>
+                                </li>
+                                <li>
+                                    <a href=""><i class="fa fa-gamepad"></i>Games</a>
+                                </li>
+                                <li>
+                                    <a href=""><i class="fa fa-folder"></i>Articles</a>
+                                </li>
+                                <li>
+                                    <a href="table.html"><i class="fa fa-users"></i>Users</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- ! header section ends here -->
+    <h1 class="section-title">videos</h1>
     <div class="meryem95">
         <div class="row22">
             <div id="main16">
                 <select name="" id="mery">
-                    <option value="">1ére Année  </option>
+                    <option value="">1ére Année </option>
                     <option value="">2éme Année</option>
                 </select>
                 <select name="" id="mery">
@@ -148,21 +264,18 @@
                     <option value="">Acquérir les Bases de l'Algorithmique</option>
                 </select>
             </div>
-            <div>
-                <h1 class="ayman"> VIDEOS</h1>
-            </div>
             <div class="content3">
                 <div class="card" data-aos="zoom-out-up">
-                    <a href="#"><img src="image.projet/PHO1 (2).jpg" alt="" ></a>
-                    <h5 id="main11">Code Like  A Pro In 5 Minutes</h5>
+                    <a href="#"><img src="src/img/PHO1 (2).jpg" alt=""></a>
+                    <h5 id="main11">Code Like A Pro In 5 Minutes</h5>
                 </div>
                 <div class="card" data-aos="zoom-out-up">
-                    <a href="#"><img src="image.projet/PHO2.jpg" alt="" ></a>
+                    <a href="#"><img src="src/img/PHO2.jpg" alt=""></a>
                     <h5 id="main11">10 Tips To Master Css Media Queries</h5>
                 </div>
-                <div class="card" data-aos="zoom-out-up" >
-                    <a href="#"><img src="image.projet/PHO3.jpg" alt="" ></a>
-                    <h5 id="main11" >Best Artificial Intelligence Websites</h5>
+                <div class="card" data-aos="zoom-out-up">
+                    <a href="#"><img src="src/img/PHO3.jpg" alt=""></a>
+                    <h5 id="main11">Best Artificial Intelligence Websites</h5>
                     </p>
                 </div>
             </div>
@@ -172,32 +285,99 @@
         <div class="row22">
             <div class="content3">
                 <div class="card" data-aos="zoom-out-up">
-                    <a href="#"><img src="image.projet/PHO4.jpg" alt="" ></a>
+                    <a href="#"><img src="src/img/PHO4.jpg" alt=""></a>
                     <h5 id="main11">Top Five Function In Javascript</h5>
                 </div>
-                <div class="card" data-aos="zoom-out-up" >
-                    <a href="#"><img src="image.projet/PHO5.jpg" alt="" ></a>
+                <div class="card" data-aos="zoom-out-up">
+                    <a href="#"><img src="src/img/PHO5.jpg" alt=""></a>
                     <h5 id="main11">Go To Top Buttom Using Javascript</h5>
                 </div>
-                <div class="card" data-aos="zoom-out-up" >
-                    <a href="#"><img src="image.projet/PHO6.jpg" alt="" ></a>
-                    <h5 id="main11" >How To Make 3k $ Using Python</h5>
+                <div class="card" data-aos="zoom-out-up">
+                    <a href="#"><img src="src/img/PHO6.jpg" alt=""></a>
+                    <h5 id="main11">How To Make 3k $ Using Python</h5>
                     </p>
                 </div>
             </div>
         </div>
-    </div>
-    <div>
-        <nav aria-label="..." id="bay">
-            <ul class="pagination pagination-lg">
-              <li class="page-item active" aria-current="page">
-                <span class="page-link bg-success ">1</span>
-              </li>
-              <li class="page-item"><a class="page-link" href="#">2</a></li>
-              <li class="page-item"><a class="page-link" href="#">3</a></li>
-            </ul>
-        </nav>
-    </div>
-    
+        <div id="btn2">
+            <button class="btn2">1</button>
+            <button class="btn2">2</button>
+            <button class="btn2">3</button>
+            <button class="btn2">4</button>
+            <button class="btn2">NEXT <i class="fa-solid fa-chevron-right"></i></button>
+        
+        </div>
+        </div>
+        <!-- footer -->
+        <footer id="footer">
+            <div class="container cols">
+                <div class="col">
+                    <h3>OFPPT ARCHIVE</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque enim temporibus sapiente molestias at?
+                        Autem
+                        suscipit deserunt atque fugiat cum, nemo similique veniam rerum, quis sit impedit excepturi omnis
+                        corrupti!</p>
+                </div>
+                <div class="col">
+                    <h3>Our partner</h3>
+                    <h3>> partner 1</h3>
+                    <h3>> partner 2</h3>
+                    <h3>> partner 3</h3>
+                    <h3>> partner 4</h3>
+                </div>
+                <div class="col">
+                    <h3>top applications</h3>
+                    <div class="footer_items">
+                        <div class="footer_item">
+                            <img src="./src/img/icons8_pycharm.svg">
+                            <span>Pycharm</span>
+                        </div>
+                        <div class="footer_item">
+                            <img src="./src/img/icons8_sublime_text.svg">
+                            <span>Sublime</span>
+                        </div>
+                        <div class="footer_item">
+                            <img src="./src/img/icons8_mongodb.svg">
+                            <span>mongodb</span>
+                        </div>
+                        <div class="footer_item">
+                            <img src="./src/img/icons8_git.svg">
+                            <span>git</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <h3>Reach us</h3>
+                    <div class="footer_items">
+                        <div class="footer_item">
+                            <img src="./src/img/icons8_facebook.svg">
+                            <span>facebook</span>
+                        </div>
+                        <div class="footer_item">
+                            <img src="./src/img/icons8_instagram.svg">
+                            <span>instagram</span>
+                        </div>
+                        <div class="footer_item">
+                            <img src="./src/img/icons8_vimeo.svg">
+                            <span>vimeo</span>
+                        </div>
+                        <div class="footer_item">
+                            <img src="./src/img/icons8_tiktok.svg">
+                            <span>tiktok</span>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <div class="container copyright">
+            Copyright &copy; 2023 Made with &heartsuit; by dev101 groupe 1 All Rights Reserved.
+        </div>
+    </footer>
+    <script src="./src/js/script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
 </body>
+
 </html>

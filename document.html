@@ -1,52 +1,209 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="document.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./src/img/fav-icon.ico" type="image/x-icon" />
+    <!-- linking font awesome -->
+    <link rel="stylesheet" href="./src/css/all.min.css" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/> -->
+    <!-- linking css file  -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <link rel="stylesheet" href="./src/css/animation.css" />
+    <meta name="description" content="Discover the resources you need to succeed in digital development.">
+    <link rel="stylesheet" href="src/css/Document.css">
     <title>Documents</title>
 </head>
-
 <body>
+  <div id="go-top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </div>
+  <!-- gear icon -->
+  <i class="fa-solid fa-gears settings-icon" id="settings-icon"></i>
+  <!-- settings -->
+  <div class="settings" id="settings">
+    <h4>website settings</h4>
+    dark mode
+    <input class="switch" type="checkbox" id="mode-change" checked />
+    <ul class="colors">
+      <li class="color" style="background-color: rgba(255, 99, 71, 1)"></li>
+      <li class="color" style="background-color: rgba(255, 128, 128,1)"></li>
+      <li class="color" style="background-color: rgba(255, 176, 0,1)"></li>
+      <li class="color" style="background-color: rgba(186,9,19,1)"></li>
+      <li class="color" style="background-color: rgba(79, 155, 115, 1)"></li>
+      <li class="color" style="background-color: rgba(56, 118, 191,1)"></li>
+    </ul>
+  </div>
+  <!-- settings -->
+
+<!-- header section starts here -->
+<i class="menu-icon fa fa-bars" id="menu-icon"></i>
+<header class="container">
+  <a href="/">
+    <img src="./src/img/devlogo.png" alt="Ofppt logo" class="logo" /></a>
+  <nav class="navbar" id="navbar">
+    <ul class="main-menu">
+      <li>
+        <a href="index.html"><i class="fa fa-home"></i>Home</a>
+      </li>
+      <li>
+        <a href="about.html"><i class="fa fa-question-circle"></i>about</a>
+      </li>
+      <li>
+        <a href="Team.html"><i class="fa fa-users"></i>our team</a>
+      </li>
+      <li>
+        <a href="contact.html"><i class="fa fa-headset"></i>Contact</a>
+      </li>
+      <li>
+        <a href=""><i class="fa fa-list"></i>Courses</a>
+        <div class="sub-menu">
+          <img src="./src/img/Dropdown menu-bro.svg" alt="mega menu image" class="image pulse" />
+          <div class="links">
+            <ul>
+              <li>
+                <a href="videos.html"><i class="fa fa-video"></i>Videos</a>
+              </li>
+              <li class="active">
+                <a href="document.html"><i class="fa fa-file"></i>Documents</a>
+              </li>
+              <li>
+                <a href="site.html"><i class="fa fa-globe"></i>Websites</a>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <a href="./App.html"><i class="fa fa-computer"></i>Applications</a>
+              </li>
+              <li>
+                <a href=""><i class="fa fa-gamepad"></i>Games</a>
+              </li>
+              <li>
+                <a href=""><i class="fa fa-folder"></i>Articles</a>
+              </li>
+              <li>
+                <a href="table.html"><i class="fa fa-users"></i>Users</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </nav>
+</header>
+<!-- ! header section ends here -->
+<h1 class="section-title">Documents</h1>
     <div class="meryem">
         <div class="row2">
-            <div class="header">
-                <h1 id="M97">Documents</h1>
-            </div>
             <div id="content19">
                 <div class="card" data-aos="zoom-out-up">
-                    <a href="R E S U M E P Y T H O N.pdf"><img src="IMAGE/pthn.jpg" alt=""></a>
+                    <a href="src/documents/R E S U M E P Y T H O N.pdf"><img src="src/img/pthn.jpg" alt=""></a>
                     <h5 id="main1">Cours PYTHON</h5>
                 </div>
                 <div class="card" data-aos="zoom-out-up">
-                    <a href="HTML-ملخص-لغة (1).pdf"><img src="IMAGE/html.jpg" alt=""></a>
+                    <a href="src/documents/HTML-ملخص-لغة (1).pdf"><img src="src/img/html.jpg" alt=""></a>
                     <h5 id="main1">Cours HTML</h5>
                 </div>
                 <div class="card" data-aos="zoom-out-up">
-                    <a href="RESUME_CSS_01_13.pdf"><img src="IMAGE/imagcss.jpg" alt=""></a>
+                    <a href="src/documents/RESUME_CSS_01_13.pdf"><img src="src/img/imagcss.jpg" alt=""></a>
                     <h5 id="main1">Cours CSS</h5>
                     </p>
                 </div>
             </div>
             <div id="content19">
                 <div class="card" data-aos="zoom-out-up">
-                    <a href="resume algo.pdf"><img src="IMAGE/algo.jpg" alt=""></a>
+                    <a href="src/documents/resume algo.pdf"><img src="src/img/algo.jpg" alt=""></a>
                     <h5 id="main1">Cours ALGO</h5>
                 </div>
                 <div class="card" data-aos="zoom-out-up">
-                    <a href="cours-sql-sh-.pdf"><img src="IMAGE/sql.jpg" alt=""></a>
+                    <a href="src/documents/cours-sql-sh-.pdf"><img src="src/img/sqldoc.jpg" alt=""></a>
                     <h5 id="main1">Cours SQL </h5>
                 </div>
                 <div class="card" data-aos="zoom-out-up">
-                    <a href="FastPHP.pdf"><img src="IMAGE/php.jpg" alt=""></a>
+                    <a href="src/documents/FastPHP.pdf"><img src="src/img/phpdoc.jpg" alt=""></a>
                     <h5 id="main1">Cours PHP</h5>
                     </p>
                 </div>
             </div>
         </div>
-    </div>
-
+        <div id="btn2">
+          <button class="btn2">1</button>
+          <button class="btn2">2</button>
+          <button class="btn2">3</button>
+          <button class="btn2">4</button>
+          <button class="btn2">NEXT <i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+        </div>
+        <!-- footer -->
+        <footer id="footer">
+          <div class="container cols">
+            <div class="col">
+              <h3>OFPPT ARCHIVE</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque enim temporibus sapiente molestias at?
+                Autem
+                suscipit deserunt atque fugiat cum, nemo similique veniam rerum, quis sit impedit excepturi omnis
+                corrupti!</p>
+            </div>
+            <div class="col">
+              <h3>Our partner</h3>
+              <h3>> partner 1</h3>
+              <h3>> partner 2</h3>
+              <h3>> partner 3</h3>
+              <h3>> partner 4</h3>
+            </div>
+            <div class="col">
+              <h3>top applications</h3>
+              <div class="footer_items">
+                <div class="footer_item">
+                  <img src="./src/img/icons8_pycharm.svg">
+                  <span>Pycharm</span>
+                </div>
+                <div class="footer_item">
+                  <img src="./src/img/icons8_sublime_text.svg">
+                  <span>Sublime</span>
+                </div>
+                <div class="footer_item">
+                  <img src="./src/img/icons8_mongodb.svg">
+                  <span>mongodb</span>
+                </div>
+                <div class="footer_item">
+                  <img src="./src/img/icons8_git.svg">
+                  <span>git</span>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <h3>Reach us</h3>
+              <div class="footer_items">
+                <div class="footer_item">
+                  <img src="./src/img/icons8_facebook.svg">
+                  <span>facebook</span>
+                </div>
+                <div class="footer_item">
+                  <img src="./src/img/icons8_instagram.svg">
+                  <span>instagram</span>
+                </div>
+                <div class="footer_item">
+                  <img src="./src/img/icons8_vimeo.svg">
+                  <span>vimeo</span>
+                </div>
+                <div class="footer_item">
+                  <img src="./src/img/icons8_tiktok.svg">
+                  <span>tiktok</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container copyright">
+            Copyright &copy; 2023 Made with &heartsuit; by dev101 groupe 1 All Rights Reserved.
+      </div>
+  </footer>
+  <script src="./src/js/script.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+    
 </body>
-
 </html>

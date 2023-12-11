@@ -1,15 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="table.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500&family=Oswald&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>table</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="shortcut icon" href="./src/img/fav-icon.ico" type="image/x-icon" />
+<!-- linking font awesome -->
+<link rel="stylesheet" href="./src/css/all.min.css" />
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/> -->
+<!-- linking css file  -->
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<link rel="stylesheet" href="./src/css/style.css" />
+<link rel="stylesheet" href="./src/css/animation.css" />
+<link rel="stylesheet" href="src/css/table.css">
+<title>OFPPT Archive || digital development</title>
+<meta name="description" content="Discover the resources you need to succeed in digital development.">
 </head>
+
 <body>
-    <header> <h1> Registration Table :</h1> </header>
+<div id="go-top">
+    <i class="fa-solid fa-arrow-up"></i>
+</div>
+<!-- gear icon -->
+<i class="fa-solid fa-gears settings-icon" id="settings-icon"></i>
+<!-- settings -->
+<div class="settings" id="settings">
+    <h4>website settings</h4>
+    dark mode
+    <input class="switch" type="checkbox" id="mode-change" checked />
+    <ul class="colors">
+        <li class="color" style="background-color: rgba(255, 99, 71, 1)"></li>
+        <li class="color" style="background-color: rgba(255, 128, 128,1)"></li>
+        <li class="color" style="background-color: rgba(255, 176, 0,1)"></li>
+        <li class="color" style="background-color: rgba(186,9,19,1)"></li>
+        <li class="color" style="background-color: rgba(79, 155, 115, 1)"></li>
+        <li class="color" style="background-color: rgba(56, 118, 191,1)"></li>
+    </ul>
+</div>
+<!-- settings -->
+
+<!-- header section starts here -->
+<i class="menu-icon fa fa-bars" id="menu-icon"></i>
+<header class="container">
+    <a href="/">
+        <img src="./src/img/devlogo.png" alt="Ofppt logo" class="logo" /></a>
+    <nav class="navbar" id="navbar">
+        <ul class="main-menu">
+            <li>
+                <a href="index.html"><i class="fa fa-home"></i>Home</a>
+            </li>
+            <li>
+                <a href="about.html"><i class="fa fa-question-circle"></i>about</a>
+            </li>
+            <li>
+                <a href="Team.html"><i class="fa fa-users"></i>our team</a>
+            </li>
+            <li>
+                <a href="contact.html"><i class="fa fa-headset"></i>Contact</a>
+            </li>
+            <li>
+                <a href=""><i class="fa fa-list"></i>Courses</a>
+                <div class="sub-menu">
+                    <img src="./src/img/Dropdown menu-bro.svg" alt="mega menu image" class="image pulse" />
+                    <div class="links">
+                        <ul>
+                            <li>
+                                <a href="videos.html"><i class="fa fa-video"></i>Videos</a>
+                            </li>
+                            <li>
+                                <a href="document.html"><i class="fa fa-file"></i>Documents</a>
+                            </li>
+                            <li>
+                                <a href="site.html"><i class="fa fa-globe"></i>Websites</a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="./App.html"><i class="fa fa-computer"></i>Applications</a>
+                            </li>
+                            <li>
+                                <a href=""><i class="fa fa-gamepad"></i>Games</a>
+                            </li>
+                            <li>
+                                <a href=""><i class="fa fa-folder"></i>Articles</a>
+                            </li>
+                            <li class="active">
+                                <a href="table.html"><i class="fa fa-users"></i>Users</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </nav>
+</header>
+<!-- ! header section ends here -->
+<div id="users_registred">
+    <h1 class="section-title">applications</h1>
     <table >
         <tr id="t1" >
             <td> <i class="fa-solid fa-plus"></i></td>
@@ -22,7 +109,7 @@
         </tr>
         <tr  >
             <td> 1</td>
-            <td> <img src="img/IMG.jpg" alt=""></td>
+            <td> <img src="src/img/IMG.jpg" alt=""></td>
             <td> Bilal Abadi</td>
             <td> bilal56@gmail.com</td>
             <td>  0734865439</td>
@@ -31,7 +118,7 @@
         </tr>
         <tr  class="gris">
             <td> 2</td>
-            <td> <img src="img/IMG2.jpg" alt=""></td>
+            <td> <img src="src/img/IMG2.jpg" alt=""></td>
             <td> Sara Al-Farsi</td>
             <td> sara23@gmail.com</td>
             <td>  0745673245</td>
@@ -40,7 +127,7 @@
         
         <tr >
             <td> 3</td>
-            <td> <img src="img/IMG3.jpg" alt=""></td>
+            <td> <img src="src/img/IMG3.jpg" alt=""></td>
             <td> Said Sharif</td>
             <td> said45@gmai.com</td>
             <td> 0645547689</td>
@@ -50,7 +137,7 @@
         
         <tr  class="gris" >
             <td> 4</td>
-            <td> <img src="img/IMG6.jpg" alt=""></td>
+            <td> <img src="src/img/IMG6.jpg" alt=""></td>
             <td> Hassan Qassim</td>
             <td> hassan770@gmail.com </td>
             <td>  0745129876</td>
@@ -60,7 +147,7 @@
         
         <tr >
             <td> 5</td>
-            <td> <img src="img/IMG4.jpg" alt=""></td>
+            <td> <img src="src/img/IMG4.jpg" alt=""></td>
             <td> Safa Farouk</td>
             <td> safa223@gmail.com</td>
             <td>  0712334896</td>
@@ -69,7 +156,7 @@
         
         <tr  class="gris" >
             <td> 6</td>
-            <td> <img src="img/IMG7.jpg" alt=""></td>
+            <td> <img src="src/img/IMG7.jpg" alt=""></td>
             <td> Yassmin Al-Amin</td>
             <td>yassmin@gmail.com </td>
             <td> 0788653456</td>
@@ -79,13 +166,81 @@
         
         <tr >
             <td> 7</td>
-            <td> <img src="img/IMG5.jpg" alt=""></td>
+            <td> <img src="src/img/IMG5.jpg" alt=""></td>
             <td> Karim Nasser</td>
             <td> karim98@gmail.com</td>
             <td> 0654342315</td>
             <td>27/11/2023  </td>
         </tr>
-        
-        
-</body>
-</html>
+    </table>
+
+</div>
+<!-- footer -->
+<footer id="footer">
+    <div class="container cols">
+        <div class="col">
+            <h3>OFPPT ARCHIVE</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque enim temporibus sapiente molestias at?
+                Autem
+                suscipit deserunt atque fugiat cum, nemo similique veniam rerum, quis sit impedit excepturi omnis
+                corrupti!</p>
+        </div>
+        <div class="col">
+            <h3>Our partner</h3>
+            <h3>> partner 1</h3>
+            <h3>> partner 2</h3>
+            <h3>> partner 3</h3>
+            <h3>> partner 4</h3>
+        </div>
+        <div class="col">
+            <h3>top applications</h3>
+            <div class="footer_items">
+                <div class="footer_item">
+                    <img src="./src/img/icons8_pycharm.svg">
+                    <span>Pycharm</span>
+                </div>
+                <div class="footer_item">
+                    <img src="./src/img/icons8_sublime_text.svg">
+                    <span>Sublime</span>
+                </div>
+                <div class="footer_item">
+                    <img src="./src/img/icons8_mongodb.svg">
+                    <span>mongodb</span>
+                </div>
+                <div class="footer_item">
+                    <img src="./src/img/icons8_git.svg">
+                    <span>git</span>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <h3>Reach us</h3>
+            <div class="footer_items">
+                <div class="footer_item">
+                    <img src="./src/img/icons8_facebook.svg">
+                    <span>facebook</span>
+                </div>
+                <div class="footer_item">
+                    <img src="./src/img/icons8_instagram.svg">
+                    <span>instagram</span>
+                </div>
+                <div class="footer_item">
+                    <img src="./src/img/icons8_vimeo.svg">
+                    <span>vimeo</span>
+                </div>
+                <div class="footer_item">
+                    <img src="./src/img/icons8_tiktok.svg">
+                    <span>tiktok</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container copyright">
+        Copyright &copy; 2023 Made with &heartsuit; by dev101 groupe 1 All Rights Reserved.
+    </div>
+</footer>
+<script src="./src/js/script.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
